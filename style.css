@@ -1,0 +1,101 @@
+body {
+    background-color: rgb(29, 29, 29);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(29, 29, 29);
+    padding: 10px 20px;
+}
+
+#comeco {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#horario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#status-icons {
+    display: flex;
+    align-items: center;
+}
+
+#status-icons img {
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+}
+
+#status-icons span {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.sites {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 15px;
+}
+
+.letras {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.item span {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.item p {
+    font-size: 14px;
+    text-align: center;
+}
+
+#titulo{
+    display: flex; 
+    align-items: center;
+}

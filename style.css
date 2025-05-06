@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(14, 14, 14);
+    background-color: rgb(29, 29, 29);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: rgb(14, 14, 14);
+    background-color: rgb(29, 29, 29);
     padding: 10px 20px;
 }
 
@@ -76,7 +76,7 @@ section h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #272525;
+    background-color: #333;
     border-radius: 8px;
     padding: 10px;
     text-decoration: none;
@@ -131,12 +131,13 @@ section h2 {
     margin-bottom: 10px;
 }
 
-
 #item-sugestao {
-    background-color: #b3b3b3;
+    background-color: #dadada;
     border-radius: 10px;
     padding: 10px;
+    
     align-items: center;
+    color: #272525;
 }
 
 .icone-sugestao {
@@ -144,8 +145,6 @@ section h2 {
     height: 40px;
     margin-right: 10px;
     border-radius: 5px;
-    text-align: center;
-    
 }
 
 .info-sugestao {
@@ -156,27 +155,24 @@ section h2 {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 3px;
-    color: #333;
-    display: flex;
 }
 
 .url-sugestao {
     font-size: 12px;
-    color: #888;
+    color: #696969;
     margin-bottom: 2px;
 }
 
 .tempo-sugestao {
     font-size: 11px;
-    color: #888;
+    color: #747474;
 }
-
 
 .historico-itens {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: #272525;
+    background-color: #333;
     border-radius: 8px;
     padding: 10px;
 }
@@ -201,7 +197,7 @@ section h2 {
     font-size: 12px;
 }
 
-#icones{
+#icones {
     display: flex;
 }
 
@@ -219,18 +215,8 @@ section h2 {
     margin-bottom: 15px;
 }
 
-#RelatorioPrivacidade {
-    margin-bottom: 20px;
-}
-
-#titulo-privacidade {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
 #resumo-privacidade {
-    background-color: #272525;
+    background-color: #333;
     border-radius: 10px;
     padding: 15px;
     display: flex;
@@ -242,45 +228,129 @@ section h2 {
     align-items: center;
     margin-right: 15px;
     
-    border-radius: 8px;
-    padding: 8px;
+
+
 }
 
 #icone-rastreamento img {
-    width: 70px; 
-    height: 65px; 
-    margin-right: 10px; 
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
 #icone-rastreamento span {
-    font-size: 18px; 
+    font-size: 18px;
     font-weight: bold;
-    margin-left: 5px; 
+    margin-left: 5px;
 }
 
 #resumo-privacidade p {
     font-size: 14px;
     line-height: 1.4;
-    margin-left: 10px; 
+    margin-left: 10px;
 }
 
 #botao-editar {
     background-color: #272525;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 30px;
     padding: 12px 20px;
     font-size: 16px;
     cursor: pointer;
     margin-top: 15px;
-    width: auto; 
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto; 
-    text-align: center; 
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
+footer {
+    background-color: #272525;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100px;
+}
 
-#botao-editar:hover {
-    background-color: #777;
+#navegacao-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icone-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.icone-footer img {
+    width: 25px;
+    height: 25px;
+    opacity: 0.7;
+}
+
+.icone-azul img {
+    opacity: 1;
+    filter: brightness(0) saturate(100%) hue-rotate(200deg);
+}
+
+#barra-busca-footer {
+    background-color: #333;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.icone-busca {
+    padding: 8px;
+    opacity: 0.7;
+    margin-right: 5px;
+}
+
+.icone-busca img {
+    width: 22px;
+    height: 22px;
+}
+
+#barra-busca-footer input[type="text"] {
+    flex: 1;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin: 0;
+    padding: 8px 0;
+    outline: none;
+}
+
+#barra-busca-footer input::placeholder {
+    color: #888;
+}
+
+.icone-microfone {
+    padding: 8px;
+    opacity: 0.7;
+    margin-left: 5px;
+}
+
+.icone-microfone img {
+    width: 28px;
+    height: 28px;
+}
+
+main {
+    padding: 20px;
+    padding-bottom: 60px;
 }

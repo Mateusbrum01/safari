@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(14, 14, 14);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(14, 14, 14);
     padding: 10px 20px;
 }
 
@@ -47,55 +47,240 @@ section {
     margin-bottom: 20px;
 }
 
+section#Preferidos #titulo-preferidos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+section#Preferidos #titulo-preferidos img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
 section h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#Preferidos .sites {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.item-preferido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #272525;
+    border-radius: 8px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.item-preferido span {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.item-preferido img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 3px;
+}
+
+.item-preferido p {
+    font-size: 12px;
+    text-align: center;
+}
+
+#Preferidos .nomes-sites {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+#Preferidos .nomes-sites a p {
+    font-size: 12px;
+}
+
+#SugestoesHistorico {
+    display: flex;
+    gap: 20px;
+}
+
+#Sugestoes {
+    flex: 1;
+}
+
+#HistoricoRapido {
+    flex: 1;
+}
+
+#titulo-sugestoes,
+#titulo-historico {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+#item-sugestao {
+    background-color: #b3b3b3;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+.icone-sugestao {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+.info-sugestao {
+    flex: 1;
+}
+
+.titulo-sugestao {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: #333;
+    display: flex;
+}
+
+.url-sugestao {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 2px;
+}
+
+.tempo-sugestao {
+    font-size: 11px;
+    color: #888;
+}
+
+
+.historico-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #272525;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.item-historico {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    padding: 8px 5px;
+}
+
+.icone-historico {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.texto-historico {
+    font-size: 12px;
+}
+
+#icones{
+    display: flex;
+}
+
+.icone-preferidos {
+    margin-right: 10px;
+}
+
+#RelatorioPrivacidade {
+    margin-bottom: 20px;
+}
+
+#titulo-privacidade {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-.sites {
-    display: grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap: 15px;
+#RelatorioPrivacidade {
+    margin-bottom: 20px;
 }
 
-.letras {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    text-align: center;
+#titulo-privacidade {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
-.item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #333;
+#resumo-privacidade {
+    background-color: #272525;
     border-radius: 10px;
     padding: 15px;
-    text-decoration: none;
-    color: white;
-}
-
-.item span {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.item img {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 5px;
-}
-
-.item p {
-    font-size: 14px;
-    text-align: center;
-}
-
-#titulo{
-    display: flex; 
+    display: flex;
     align-items: center;
+}
+
+#icone-rastreamento {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    
+    border-radius: 8px;
+    padding: 8px;
+}
+
+#icone-rastreamento img {
+    width: 70px; 
+    height: 65px; 
+    margin-right: 10px; 
+}
+
+#icone-rastreamento span {
+    font-size: 18px; 
+    font-weight: bold;
+    margin-left: 5px; 
+}
+
+#resumo-privacidade p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-left: 10px; 
+}
+
+#botao-editar {
+    background-color: #272525;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: auto; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center; 
+}
+
+
+#botao-editar:hover {
+    background-color: #777;
 }
